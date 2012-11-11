@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+thumbs.db
+cache/*
+log/*
+web/uploads/*
+config/databases.yml
+lib/model/om/*
+lib/model/map/*
+
+!.gitkeep
+

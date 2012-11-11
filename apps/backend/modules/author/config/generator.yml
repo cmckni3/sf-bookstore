@@ -1,0 +1,21 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           author
+    theme:                 admin15
+    non_verbose_templates: true
+    with_show:             false
+    singular:              author
+    plural:                authors
+    route_prefix:          author
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    ~
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

@@ -1,0 +1,1 @@
+Yet another symfony application playground. I don't know what this one does either.

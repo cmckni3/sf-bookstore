@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" defaultIdMethod="native" package="lib.model">
+
+  <table name="author">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="first_name" type="varchar" size="255" />
+    <column name="last_name" type="varchar" primaryString="1" size="255" />
+    <column name="is_alive" type="boolean" />
+  </table>
+
+  <table name="book">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="author_id" type="integer" />
+    <foreign-key foreignTable="author">
+      <reference local="author_id" foreign="id" />
+    </foreign-key>
+    <column name="title" type="varchar" required="true" primaryString="1" size="255" />
+    <column name="year" type="integer" />
+    <column name="price" type="float" />
+  </table>
+
+</database>
